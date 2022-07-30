@@ -10,11 +10,9 @@
 
 download (latest successful build from drone.io) to `/usr/local/bin`
 
-	wget https://drone.io/github.com/benschw/jsonfilter/files/jsonfilter-`uname`-`uname -m`.gz 
-	gunzip jsonfilter-`uname`-`uname -m`.gz 
-	chmod +x jsonfilter-`uname`-`uname -m`
-	sudo mv jsonfilter-`uname`-`uname -m` /usr/local/bin/jsonfilter
-
+wget -qO- https://github.com/ManuGithubSteam/jsonfilter/raw/master/jsonfilter-Linux-x86_64-0.1.1.gz | \
+gunzip > /usr/local/bin/jsonfilter
+chmod +x /usr/local/bin/jsonfilter
 
 or get the `.deb`
 
